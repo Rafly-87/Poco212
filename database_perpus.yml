@@ -1,0 +1,225 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/rafly
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 167
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 43
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 389
+    content: "\e]3008;start=a962b5aa-7898-4a1f-baaf-3f28add2f7a3;machineid=d6c00ab7de394f65bf29fb1cab702020;user=root;hostname=vesper;bootid=81f7a059-38ae-4452-8dc8-d00173ceb819;pid=4549;type=shell;cwd=/home/rafly\e\\\e]0;root@vesper:/home/rafly\a\e[?2004h\e[38;5;196m(1)\e[0m \e[38;5;196mroot\e[0m\e[38;5;196m@\e[0m\e[38;5;196mvesper\e[0m \e[38;5;196m(\e[0m \e[38;5;196m13:24:05\e[0m \e[38;5;196m|\e[0m \e[38;5;196m/home/rafly\e[0m \e[38;5;196m)\r\r\n\e[0m \e[38;5;196m|-->\e[0m "
+  - delay: 4654
+    content: m
+  - delay: 515
+    content: 'y'
+  - delay: 884
+    content: s
+  - delay: 143
+    content: q
+  - delay: 286
+    content: l
+  - delay: 482
+    content: ' '
+  - delay: 361
+    content: '='
+  - delay: 2718
+    content: "\b\e[K"
+  - delay: 905
+    content: '-'
+  - delay: 280
+    content: u
+  - delay: 342
+    content: ' '
+  - delay: 615
+    content: r
+  - delay: 180
+    content: o
+  - delay: 166
+    content: o
+  - delay: 277
+    content: t
+  - delay: 844
+    content: "\r\n\e[?2004l\r"
+  - delay: 7
+    content: "\e]3008;start=3b34fc0e-f6db-4318-b416-10d2072305a1;machineid=d6c00ab7de394f65bf29fb1cab702020;user=root;hostname=vesper;bootid=81f7a059-38ae-4452-8dc8-d00173ceb819;pid=4549;type=command;cwd=/home/rafly\e\\"
+  - delay: 5
+    content: "mysql: Deprecated program name. It will be removed in a future release, use '/usr/bin/mariadb' instead\r\n"
+  - delay: 29
+    content: "\e(B\e[0;1mWelcome to the MariaDB monitor.  Commands end with ; or \\g.\r\n\e(B\e[m\e(B\e[0;1mYour MariaDB connection id is 6\r\nServer version: 12.1.2-MariaDB Arch Linux\r\n\r\n\e(B\e[m\e(B\e[0;1mCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\r\n\r\n\e(B\e[m\e(B\e[0;1mType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\r\n\r\n\e(B\e[m\e[?1034hMariaDB [(none)]> "
+  - delay: 4344
+    content: d
+  - delay: 393
+    content: r
+  - delay: 224
+    content: o
+  - delay: 214
+    content: p
+  - delay: 432
+    content: ' '
+  - delay: 445
+    content: d
+  - delay: 155
+    content: a
+  - delay: 163
+    content: t
+  - delay: 102
+    content: a
+  - delay: 1025
+    content: b
+  - delay: 177
+    content: a
+  - delay: 536
+    content: s
+  - delay: 196
+    content: e
+  - delay: 162
+    content: ' '
+  - delay: 771
+    content: p
+  - delay: 140
+    content: e
+  - delay: 171
+    content: r
+  - delay: 46
+    content: p
+  - delay: 1274
+    content: u
+  - delay: 302
+    content: s
+  - delay: 679
+    content: t
+  - delay: 137
+    content: a
+  - delay: 223
+    content: k
+  - delay: 90
+    content: a
+  - delay: 128
+    content: a
+  - delay: 181
+    content: 'n'
+  - delay: 1209
+    content: ;
+  - delay: 383
+    content: "\r\n"
+  - delay: 7
+    content: "\e(B\e[0;1mQuery OK, 1 row affected (0.006 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [(none)]> "
+  - delay: 1091
+    content: drop database perpustakaan;
+  - delay: 393
+    content: "\r\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[Ccreate database perpustakaan; use perpustakaan; create table buku (no int primary key auto_increment, judul varchar(100), penulis varchar(100)); inser\rrt into buku (judul, penulis) values ('orang-orang', 'herman');"
+  - delay: 2939
+    content: "\r\n\e(B\e[0;1mQuery OK, 1 row affected (0.001 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[m\e(B\e[0;1mDatabase changed\r\n"
+  - delay: 7
+    content: "\e(B\e[m\e(B\e[0;1mQuery OK, 0 rows affected (0.006 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[m\e(B\e[0;1mQuery OK, 1 row affected (0.001 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [perpustakaan]> "
+  - delay: 11687
+    content: "\e(B\e[0;1mBye\r\n\e(B\e[m\e]3008;end=3b34fc0e-f6db-4318-b416-10d2072305a1;exit=success\e\\"
+  - delay: 10
+    content: "\e]3008;start=a962b5aa-7898-4a1f-baaf-3f28add2f7a3;machineid=d6c00ab7de394f65bf29fb1cab702020;user=root;hostname=vesper;bootid=81f7a059-38ae-4452-8dc8-d00173ceb819;pid=4549;type=shell;cwd=/home/rafly\e\\\e]0;root@vesper:/home/rafly\a\e[?2004h\e[38;5;196m(2)\e[0m \e[38;5;196mroot\e[0m\e[38;5;196m@\e[0m\e[38;5;196mvesper\e[0m \e[38;5;196m(\e[0m \e[38;5;196m13:24:49\e[0m \e[38;5;196m|\e[0m \e[38;5;196m/home/rafly\e[0m \e[38;5;196m)\r\r\n\e[0m \e[38;5;196m|-->\e[0m "
+  - delay: 6482
+    content: "\e[?2004l\r\r\nlogout\r\n"
